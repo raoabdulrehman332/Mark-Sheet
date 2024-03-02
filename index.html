@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Sheet</title>
+</head>
+<style>
+    h2{
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 45px;
+        color: blue;
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 10px;
+    }
+    h1{
+        margin-left: 10px;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 20px;
+        text-transform: capitalize;
+        text-align: justify;
+    }
+</style>
+<body>
+    <h2>JS Assignment 7: Task 6</h2>
+    <h2>Marks Sheet</h2>
+
+
+
+
+    <script>
+        alert("There are three subject Each subject 100 marks.");
+        var obtCop =+prompt("Enput the obtained marks in Computer.");
+        var a = obtCop;
+        var obturdu =+prompt("Enput the obtained marks in Urdu");
+        var b = obturdu;
+        var obtEng =+prompt("Enput the obtained marks in English.");
+        var c = obtEng;
+        var totalMarks = 300;
+        var obtained = a+b+c
+        var Percentage = obtained/totalMarks* 100
+        document.write(`<h1>Urdu: ${obturdu}</h1>`)    
+        document.write(`<h1>English: ${obtEng}</h1>`)    
+        document.write(`<h1>Computer: ${obtCop}</h1>`)    
+        document.write(`<h1>Total Marks: ${totalMarks}</h1>`)
+        document.write(`<h1>Obtained Marks: ${obtained}</h1>`)
+        document.write(`<h1>Percentage: ${Percentage}%</h1>`)
+        if(Percentage >= 80){
+            document.write(`<h1>Grade: A-One</h1>`)
+            document.write(`<h1>Remarks: Excellent</h1>`)
+        }
+        else if(Percentage >= 70){
+            document.write(`<h1>Grade: A</h1>`)
+            document.write(`<h1>Remarks: Good</h1>`)
+        }
+        else if(Percentage >= 60){
+            document.write(`<h1>Grade: b</h1>`)
+            document.write(`<h1>Remarks: you Need to improve</h1>`)
+        }
+        else if(Percentage < 60){
+            document.write(`<h1>Grade: Fail</h1>`)
+            document.write(`<h1>Remarks: Soory</h1>`)
+        }
+       
+
+    </script>
+</body>
+</html>
